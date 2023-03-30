@@ -17,6 +17,7 @@ header {
 nav {
     display: flex;
     background-color: #7f0033;
+    justify-content: center;
 }
 
 nav a {
@@ -26,17 +27,45 @@ nav a {
     color: white;
 }
 
-.aside,
-.projects {
+main {
     display: flex;
+}
+
+
+.projects {
     flex-wrap: wrap;
 }
 
+.about-me {
+    position: center;
+}
+
+.contact {
+  position: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+}
+
+
 aside {
+    display: flex;
     flex: 1;
     background-color: #c7283e ;
     padding: 50px;
     text-align: center;
+    justify-content: left;
+    /* max-width: 80%; */
+}
+
+@media screen and (min-width: 800px) {
+    aside {
+        max-width: 400px;
+    }
 }
 
 footer {
@@ -68,3 +97,5 @@ footer {
         flex-direction: column;
     }
 }
+
+@media screen and ()
