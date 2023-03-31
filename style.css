@@ -16,21 +16,26 @@ header {
 
 nav {
     display: flex;
-    background-color: #7f0033;
+    /* background-color: #7f0033; */
     justify-content: center;
 }
 
 nav a {
     padding: 10px 10px;
     text-decoration: none;
-    text-align: center;
-    color: white;
+    /* text-align: center; */
+    color: #7f0033;
+    font-size: x-large;
 }
 
 main {
     display: flex;
 }
 
+
+h3 {
+    text-align: left;
+}
 
 .projects {
     flex-wrap: wrap;
@@ -47,7 +52,6 @@ main {
 .main {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-left: 100px;
 }
 
@@ -55,11 +59,21 @@ main {
 aside {
     display: flex;
     flex: 1;
-    background-color: #c7283e ;
+    background-color: #ffdbc5;
     padding: 50px;
     text-align: center;
     justify-content: left;
     /* max-width: 80%; */
+}
+
+.selfie {
+    padding-top: 20px;
+    max-width: 200px;
+}
+
+.aside {
+    position: fixed;
+    top: 200px;
 }
 
 @media screen and (min-width: 800px) {
@@ -71,7 +85,7 @@ aside {
 footer {
     padding: 20px;
     text-align: center;
-    background: #fe6b40;
+    background: #1f5868 ;
 
 }
 
