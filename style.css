@@ -1,15 +1,15 @@
 * {
     box-sizing: border-box;
     color: #2e132e;
+    font-family: Andale Mono;
 }
 
 body {
-    font-family: Arial;
     margin: 0;
 }
 
 header {
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     background:  #ffdbc5;
 }
@@ -23,7 +23,6 @@ nav {
 nav a {
     padding: 10px 10px;
     text-decoration: none;
-    /* text-align: center; */
     color: #7f0033;
     font-size: x-large;
 }
@@ -32,9 +31,8 @@ main {
     display: flex;
 }
 
-
-h3 {
-    text-align: left;
+#worktitle {
+    font-size: 15px;
 }
 
 .projects {
@@ -42,17 +40,19 @@ h3 {
 }
 
 .about-me {
-    position: center;
+  position: center;
+  text-align: center;
 }
 
 .contact {
   position: center;
+  text-align: center;
 }
 
 .main {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+    padding: 0 50px;
 }
 
 
@@ -71,12 +71,15 @@ aside {
     max-width: 200px;
 }
 
+
+@media screen and (min-width: 1300px) {
 .aside {
     position: fixed;
     top: 200px;
 }
+}
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1300px) {
     aside {
         max-width: 400px;
     }
@@ -105,11 +108,12 @@ footer {
     max-width: 700px;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 1300px) {
     main,
     nav {
         flex-direction: column;
+        /* position: relative; */
+        align-items: center;
+        justify-content: center;
     }
-}
-
-@media screen and ()
+    }
