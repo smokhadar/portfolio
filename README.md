@@ -7,9 +7,8 @@ I used HTML to create the structure of the webpage and CSS to add styling. CSS i
 Here is a link to the deployed application: https://smokhadar.github.io/portfolio-samira/
 
 Below are screenshots of the final product:
-<img width="1440" alt="Screenshot 2023-03-31 at 21 10 04" src="https://user-images.githubusercontent.com/127573523/229264974-f631198f-e08f-4de5-b961-5340ef3f3fc4.png">
-<img width="1440" alt="Screenshot 2023-03-31 at 21 10 09" src="https://user-images.githubusercontent.com/127573523/229264982-8688ccde-97e5-4779-b1f1-6faa20a32af0.png">
-
+<img width="1440" alt="Screenshot 2023-03-31 at 21 22 41" src="https://user-images.githubusercontent.com/127573523/229265415-0c3647a6-02a0-4a00-bba8-a12c892c79f2.png">
+<img width="1440" alt="Screenshot 2023-03-31 at 21 22 47" src="https://user-images.githubusercontent.com/127573523/229265423-14ce17d8-180a-4b99-a134-29ee163f5a87.png">
 
 This project was based on the following requirements: 
 
