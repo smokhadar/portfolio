@@ -1,20 +1,48 @@
+/* Styling for all elements */
 * {
     box-sizing: border-box;
     color: #2e132e;
     font-family: Andale Mono;
 }
-
+/* Removing margin for elements in body */
 body {
     margin: 0;
 }
 
-header {
-    padding: 20px;
+/* Centering text in header, footer, and aside */
+header,
+footer,
+aside {
     text-align: center;
-    background:  #ecdcd9 ;
-    color: #244143;
 }
 
+/* Header padding and background color */
+header {
+    padding: 20px;
+    background:  #ecdcd9 ;
+}
+
+/* Footer padding and background color */
+footer {
+    padding: 20px;
+    background: #e9a04b;
+}
+
+/* Flex box styling on main and aside elements */
+main,
+.main, 
+aside {
+    display: flex;
+}
+
+aside {
+    flex: 1;
+    background-color: #ecdcd9 ;
+    padding: 50px;
+    justify-content: left;
+}
+
+/* Fonts styling */
 h1 {
     color: #dd549a;
 }
@@ -22,24 +50,22 @@ h1 {
 h2 {
     color: #244143;
 }
-nav {
-    display: flex;
-    /* background-color: #7f0033; */
-    justify-content: center;
+
+h3 {
+    font-style: oblique;
 }
 
+/* Navigation text styling */
 nav a {
     padding: 10px 10px;
+    /* remove hyperlink underline from text-decoration */
     text-decoration: none;
     color: #dd549a;
     font-size: x-large;
 }
 
-main {
-    display: flex;
-}
-
-#worktitle {
+/* Styling on ID and class selectors  */
+#positionTitle {
     font-size: 15px;
 }
 
@@ -48,61 +74,22 @@ main {
 }
 
 .about-me {
-  position: center;
-  text-align: center;
+    position: center;
 }
 
-.contact {
-  position: center;
-}
-
-h3 {
-    font-style: oblique;
-}
-
+/* Create column for main body text, including about me and projects */
 .main {
-    display: flex;
     flex-direction: column;
     padding: 0 50px;
 }
 
-
-aside {
-    display: flex;
-    flex: 1;
-    background-color: #ecdcd9 ;
-    padding: 50px;
-    text-align: center;
-    justify-content: left;
-    /* max-width: 80%; */
-}
-
+/* Styling for avatar picture */
 .selfie {
     padding-top: 20px;
     max-width: 200px;
 }
 
-
-@media screen and (min-width: 1300px) {
-.aside {
-    position: fixed;
-    top: 200px;
-}
-}
-
-@media screen and (min-width: 1300px) {
-    aside {
-        max-width: 400px;
-    }
-}
-
-footer {
-    padding: 20px;
-    text-align: center;
-    background: #e9a04b;
-
-}
-
+/* Styling for all project cards */
 .card {
     padding: 5px;
     flex: 0 0 400px;
@@ -118,15 +105,18 @@ footer {
     max-width: 700px;
 }
 
+/* Styling for projects B and C to appear smaller than project A */
 .small-card {
     max-width: 200px;
     display: inline-block;
 }
 .small-card img {
-    max-width: 200px;
     max-height: 100px;
 }
 
+/* Media queries to adjust webpage based on screensize */
+
+/* Media query for smaller screens so all elements appear as column*/
 @media screen and (max-width: 1300px) {
     main,
     nav {
@@ -134,4 +124,18 @@ footer {
         align-items: center;
         justify-content: center;
     }
-    }
+ }
+
+ /* Media queries for larger screens to adjust aside so its fixed on the left hand side */
+ @media screen and (min-width: 1300px) {
+     .aside {
+        position: fixed;
+        top: 200px;
+     }
+  }
+        
+ @media screen and (min-width: 1300px) {
+      aside {
+       max-width: 400px;
+     }
+ }
