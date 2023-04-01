@@ -54,7 +54,10 @@ main {
 
 .contact {
   position: center;
-  text-align: center;
+}
+
+h3 {
+    font-style: oblique;
 }
 
 .main {
