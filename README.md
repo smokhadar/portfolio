@@ -1,6 +1,6 @@
 # Description
 
-This portfolio includes an about me, several work projects, and contact information for potential employeers interested in hiring me for software development.
+This portfolio includes an about me section, several work project examples, and contact information for potential employers interested in hiring me for software development.
 
 I used HTML to create the body and CSS to add styling, including flex boxes for responsive styling and media queries to adjust the browser content depending on the user's screen size.
 
